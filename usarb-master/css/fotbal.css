@@ -62,8 +62,8 @@ field team#blue-team player{
 
 
 #player1-red{
-	top: 200px;
-	left: 10px;
+	top: 260px;
+	left: 50px;
 }
 
 
@@ -83,14 +83,14 @@ field team#blue-team player{
 }
 
 #player5-red{
-	top: 60px;
-	left: 200px;
+	top: 450px;
+	left: 120px;
 }
 
 
 #player6-red{
 	top: 60px;
-	left: 280px;
+	left: 200px;
 }
 
 
