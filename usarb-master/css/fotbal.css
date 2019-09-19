@@ -6,16 +6,29 @@ field{
 	background: url(../img/field.jpg);
 }
 
+ball{
+background: url(../img/ball.png);
+background-size: contain;
+width: 20px;
+height: 20px;
+-webkit-animation-name: MovingBall;
+-webkit-animation-duration: 5s;
+-webkit-animation-iteration-count: infinite;
+position: absolute;
+animation-timing-function: ease-in-out;
+left: 30px;
+top: 150px;
+}
 
-field .ball{
-	background-image: url(../img/ball.png);
-	border-radius: 50%;
-	background-repeat: none;
-	width: 30px;
-	height: 30px;
-	display: inline-block;
-	margin-top: 245px;
-	margin-left: 335px;
+@-webkit-keyframes MovingBall {
+0% {left: 50px; top: 260px;}
+5% {left: 120px; top:200px;}
+15% {left: 120px; top: 450px;}
+35% {left: 200px; top: 330px;}
+65% {left: 290px; top: 210px;}
+85% {left: 345px; top: 200px;}
+95% {left: 670px; top: 275px;}
+100% {left: 670px; top: 275px;}
 }
 
 field player, field referee{
@@ -123,13 +136,13 @@ field team#blue-team player{
 
 #player1-blue{
 	top: 260px;
-	left: 680px;
+	left: 645px;
 }
 
 
 #player2-blue{
-	top: 60px;
-	left: 680px;
+	top: 450px;
+	left: 490px;
 }
 
 #player3-blue{
@@ -143,13 +156,13 @@ field team#blue-team player{
 }
 
 #player5-blue{
-	top: 200px;
-	left: 680px;
+	top: 330px;
+	left: 420px;
 }
 
 #player6-blue{
 	top: 200px;
-	left: 590px;
+	left: 580px;
 }
 
 
@@ -160,16 +173,16 @@ field team#blue-team player{
 
 #player8-blue{
 	top: 200px;
-	left: 440px;
+	left: 420px;
 }
 
 #player9-blue{
 	top: 330px;
-	left: 680px;
+	left: 580px;
 }
 
 #player10-blue{
-	top: 330px;
+	top: 450px;
 	left: 590px;
 }
 
