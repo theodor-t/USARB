@@ -77,8 +77,22 @@ field team#blue-team player{
 #player1-red{
 	top: 260px;
 	left: 50px;
+	-webkit-animation-name: goalkeeper;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	position: absolute;
+	animation-timing-function: ease-in-out;
+	left: 30px;
+	top: 150px;
 }
 
+@-webkit-keyframes goalkeeper {
+0% {left: 50px; top: 260px;}
+15% {left: 100px; top: 265px;}
+35% {left: 100px; top: 260px;}
+95% {left: 50px; top: 260px;}
+100% {left: 80px; top: 255px;}
+}
 
 #player2-red{
 	top: 60px;
@@ -137,6 +151,21 @@ field team#blue-team player{
 #player1-blue{
 	top: 260px;
 	left: 645px;
+	-webkit-animation-name:  goolkeeper;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	position: absolute;
+	animation-timing-function: ease-in-out;
+}
+	@-webkit-keyframes goolkeeper {
+	0% {left: 645px; top: 260px;}
+	15% {left: 645px; top: 265px;}
+	35% {left: 645px; top: 260px;}
+	45% {left: 645px; top: 260px;}
+	55% {left: 630px; top: 260px;}
+	65% {left: 645px; top: 260px;}
+	95% {left: 640px; top: 260px;}
+	100% {left: 645px; top: 255px;}
 }
 
 
@@ -189,4 +218,29 @@ field team#blue-team player{
 #player11-blue{
 	top: 330px;
 	left: 490px;
+}
+
+field tango {
+  background: url(../img/jb.gif);
+  background-size: contain;
+  -webkit-animation-name: tango;
+  -webkit-animation-duration: 4.7s;
+  -webkit-animation-direction: forwards;
+  
+  height: 150px;
+  width: 110px;
+  position: absolute;
+  left: 700px;
+  top: 250px;
+}
+
+@keyframes tango {
+	0% {left: 100px; top: 0px; opacity: 0}
+	15% {left: 0px; top: 0px;}
+	35% {left: 0px; top: 0px;}
+	45% {left: 0px; top: 0px;}
+	55% {left: 630px; top: 260px; opacity: 0}
+	65% {left: 645px; top: 260px; opacity: 0}
+	95% {left: 640px; top: 260px; opacity: 0}
+	100% {left: 645px; top: 255px; opacity: 1}
 }
